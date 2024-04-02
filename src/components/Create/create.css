@@ -1,0 +1,276 @@
+@media (max-width: 768px) {
+  .initial-div {
+    width: 90%; /* Adjust as needed for smaller screens */
+    position: static;
+    margin: 0 auto;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .with-image .text-wrapper {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .profile-pic-cell {
+    width: 70px; /* Adjust as needed */
+    height: 70px; /* Adjust as needed */
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+
+  .signature-container {
+    margin-top: 24px; /* Adjust margin as needed */
+  }
+}
+
+.editor-image {
+  position: relative;
+}
+
+.upload-image-container {
+  text-align: center;
+  padding: 18.5px 0;
+  border: 1px dashed var(--ws-gray-200);
+  border-radius: 6px;
+  margin-bottom: 14px;
+  color: #bdbbbb;
+  width: 55%;
+  margin-left: 20%;
+}
+
+.upload-image-container-tip {
+  font-size: 12px;
+  color: var(--ws-gray-400);
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+.border-dashed {
+  border: 1px dashed #ccc; /* Adjust the width and color as needed */
+}
+
+.editor-image-tab-actions {
+  margin-top: 5%;
+}
+
+.left_tabs {
+  width: 40%;
+  position: fixed;
+  left: 0%;
+  margin-top: 1%;
+  height: 100%;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input {
+  margin-bottom: 50px;
+  padding: 10px;
+  height: 50px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  border-color: #1e90fa;
+  outline: none;
+}
+
+.placeholder-label {
+  position: absolute;
+  top: 43%;
+  left: 8px;
+  transform: translateY(-50%);
+  color: #474747;
+  transition: all 0.3s ease;
+  font-size: 11px;
+}
+
+input:focus + .placeholder-label {
+  top: 9px;
+  font-size: 9px;
+  border-color: #1e90fa;
+}
+
+.social_input {
+  margin-bottom: 22px;
+  padding: 4px;
+  height: 48px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.social_input:focus {
+  border-color: #1e90fa;
+  outline: none;
+}
+
+.social-placeholder-label {
+  position: absolute;
+  top: 35%;
+  left: 40px;
+  transform: translateY(-50%);
+  color: #474747;
+  transition: all 0.3s ease;
+  font-size: 11px;
+}
+
+.social_input:focus + .social-placeholder-label {
+  top: 9px;
+  font-size: 9px;
+}
+
+/* Signature Tab Css */
+.initial-div {
+  height: auto;
+  font-size: small;
+  width: 35%;
+  position: fixed;
+  right: 16%;
+  margin-top: 15%;
+}
+
+.with-image {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic-cell {
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;
+}
+
+.text-wrapper {
+  flex-grow: 1;
+}
+
+.with-image .text-wrapper {
+  margin-left: 20px;
+}
+
+.contact-icon {
+  font-size: 11px;
+  color: rgb(33, 33, 33);
+}
+
+.contact-text {
+  line-height: 1.2;
+  color: rgb(33, 33, 33);
+}
+
+.contact-link {
+  text-decoration: unset;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.image-wrapper {
+  margin-right: 20px;
+}
+
+.border-div {
+  border-top-style: dotted;
+  border-right-style: dotted;
+  border-bottom-style: dotted;
+  border-left-style: dotted;
+  border-radius: 10px;
+}
+
+.simple-border {
+  width: 138%;
+  border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+.content {
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.contact-info img {
+  border: 0;
+  height: 12px;
+  width: 12px;
+  margin-right: 5px;
+}
+
+/* img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+} */
+
+.ws-tpl-photo {
+  width: auto;
+  height: auto;
+}
+
+.signature-buttons {
+  margin-top: 10%;
+  margin-left: 48.8%;
+  justify-content: space-between;
+}
+
+.save-signature-details-button {
+  margin-left: 75%;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0%;
+  margin-top: -2%;
+}
+
+.ws-color-picker {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 32px;
+  width: 100%;
+}
+.ws-color-picker-color {
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.ws-color-picker-color-box {
+  border: 1px solid var(--ws-gray-200);
+  border-radius: 3px;
+}
+.ws-color-picker-color-box-inner {
+  border: var(--ws-white) solid 1px;
+  border-radius: 3px;
+  height: 30px;
+  width: 30px;
+}
+.ws-color-picker-input {
+  background-color: var(--ws-white);
+  border-radius: 4px;
+  border: var(--ws-gray-200) 1px solid;
+  max-width: 77%;
+}
+.ws-color-picker-input input {
+  padding-left: 7px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+  border: none;
+}

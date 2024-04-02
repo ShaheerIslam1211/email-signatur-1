@@ -1,0 +1,226 @@
+body {
+  background: #063d57;
+}
+.signup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #063d57;
+  display: flex;
+  box-sizing: inherit;
+  left: 0;
+}
+
+.signup-logo-link {
+  position: absolute;
+  left: 11.7vw;
+  top: 20px;
+  text-decoration: none;
+}
+
+.signup-img {
+  position: absolute;
+  height: auto;
+  width: 37%;
+  left: 14.5vw;
+  top: 20%;
+  z-index: 999;
+}
+
+.signup-form {
+  position: absolute;
+  width: 60%;
+  height: 100vh;
+  text-align: center;
+  background: #fff;
+  right: 0;
+}
+
+.signup-form-inner-content {
+  width: 378px;
+  margin: 80px auto 0;
+}
+
+.signup-form-button {
+  width: 100%;
+  background-color: #f5467e !important;
+  margin-bottom: 25px;
+}
+
+.btn:not(.btn-text) {
+  color: var(--ws-white);
+}
+
+.btn {
+  border-radius: 2px solid grey;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 13px 18px 12px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms;
+  /* user-select: none; */
+  border: none;
+  outline: none;
+}
+
+.signup-form-or {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: #b9b9b9;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  margin-left: 33%;
+}
+
+.signup-form-or-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.signup-form-or-content-line {
+  height: 2px;
+  width: 20%; /* Adjust the width as needed */
+  margin-right: 20px; /* Adjust the spacing between the lines and the text */
+  background-color: #e0e0e0;
+}
+
+.signup-form-or-content-text {
+  margin: 0 10px; /* Adjust the spacing between the text and the lines */
+}
+
+.signup-form-remark {
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #4f4f4f;
+  margin: 9px 0 10px;
+}
+
+.signup-form-tos {
+  color: #828282;
+  font-size: 12px;
+}
+
+.signup-form-tos a {
+  color: #828282;
+}
+
+.signup-form-login {
+  margin-top: 45px;
+  font-size: 14px;
+  color: #4b4e5d;
+  font-weight: 600;
+}
+
+.signup-form-login a {
+  color: #f5467e;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.text-danger {
+  color: #f5467e;
+  font-size: 12px;
+  margin-top: 4px;
+  position: absolute;
+  right: 28%;
+  text-align: right;
+}
+
+.error {
+  border-bottom: 2px solid #f5467e !important;
+}
+
+.password-requirements {
+  text-align: left;
+  margin-top: 10px;
+  margin-left: -27px;
+}
+
+.password-requirements li {
+  color: #f5467e;
+  list-style-type: none;
+}
+
+.password-requirements li::before {
+  content: '✘';
+  margin-right: 5px;
+}
+
+/* Tooltip container  gst*/
+.signup-form-button {
+  position: relative;
+}
+
+/* Tooltip text */
+.signup-form-button::after {
+  content: attr(title);
+  visibility: hidden;
+  background-color: black;
+  color: white;
+  text-align: center; /* Adjust text alignment as needed */
+  white-space: nowrap; /* Prevent text from wrapping */
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: calc(100% + 10px); /* Adjust spacing from the button */
+  left: 50%;
+  font-size: xx-small;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.signup-form-button:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.signup-form-google-logo {
+  position: relative;
+  margin: 13px 0 27px;
+  padding: 4px;
+  border: 2px solid black; /* Set border to black with 2px width */
+  border-radius: 6px; /* Adjust border radius as needed */
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  line-height: 34px;
+  cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+  transition: transform 0.3s; /* Add transition for smooth zoom effect */
+}
+
+/* input[type='text'],
+input[type='password'],
+textarea {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid lightgrey !important;
+} */
+
+.signup-form-google-logo img {
+  position: absolute;
+  top: 57%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.signup-form-google-logo-text {
+  border: 2px solid black; /* Add black border with 2px width */
+  background-color: white;
+  padding: 10px 60px; /* Adjust padding as needed */
+  font-size: 16px;
+  color: black;
+  cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+  transition: transform 0.3s; /* Add transition for smooth zoom effect */
+}
+
+.signup-form-google-logo-text:hover {
+  transform: scale(1.1); /* Zoom out by 10% */
+}
